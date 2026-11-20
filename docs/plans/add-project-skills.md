@@ -5,7 +5,7 @@
 1. [x] **Add project-planning skill** — Create `.agents/skills/project-planning/SKILL.md` with the custom planning workflow and approval-gated instructions.
 2. [x] **Add committing skill** — Create `.agents/skills/committing/SKILL.md` to enforce single-change commit cadence, imperative messaging, and explicit user approval before staging or committing.
 3. [x] **Add grill-me skill** — Create `.agents/skills/grill-me/SKILL.md` for project-level discovery, interview-based requirements elicitation, and design interrogation.
-4. [ ] **Add grilling skill** — Create `.agents/skills/grilling/SKILL.md` for codebase-specific structural inspection, trace analysis, and architectural audit.
+4. [x] **Add grilling skill** — Create `.agents/skills/grilling/SKILL.md` for codebase-specific structural inspection, trace analysis, and architectural audit.
 5. [ ] **Add clean-code skill** — Create `.agents/skills/clean-code/SKILL.md` adhering to Uncle Bob (Robert C. Martin) Clean Code and SOLID principles tailored for Python 3.11+ and Azure cloud integrations.
 6. [ ] **Add python-pytest skill** — Create `.agents/skills/python-pytest/SKILL.md` with guidelines for pytest, fixtures, parameterized testing, and mocking external HTTP APIs (WeatherAPI, iRail) and Azure SDKs.
 7. [ ] **Add azure-functions-python skill** — Create `.agents/skills/azure-functions-python/SKILL.md` for Azure Functions Python v2 programming model (Timer triggers, Service Bus triggers, Blueprints, and configuration).
