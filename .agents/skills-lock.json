@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "skills": {
+    "azure-functions-python": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "62881e62e17f22769a1645abc18710e3c0a2c221e9f86bd0f55ad586f391a07b"
+    },
+    "clean-code": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "8f3bb9f72fdc949a80beff8934cc20cbd0ffc4eb82d4dcbc73352b97dc197e1e"
+    },
+    "committing": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "9a9140eb4eb19421358b2a1fde094b62357b2a07dc33ed334d0af3ac12104779"
+    },
+    "grill-me": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "626398b52d71ea3151199a9d9aa2a3fa24d690cfe733462e2559ccd61385fb6f"
+    },
+    "grilling": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "e064adb982f256343cca130acbf674a0ae79a3aff9742e1a7b51639d1f30e1b1"
+    },
+    "project-planning": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "f6515edd1792acb091911a194251d011def537938c9c14028b48d49a99f6ffa4"
+    },
+    "python-api-client": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "3089ea9dd6b9f5eadcee2163838ed7fcd36908c145b13eebf3f3ffa11230c47f"
+    },
+    "python-pytest": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "576cbf3410fb15d86e807a7209034a3b9fac971a210cae3a6a5b4cd3026f3a18"
+    }
+  }
+}
