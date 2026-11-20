@@ -40,6 +40,13 @@ Delivers a consolidated, user-friendly daily briefing:
 
 ```
 Eindopdracht-IT-Integration/
+├── .agents/
+│   ├── plugins/
+│   │   └── project-mcp/
+│   │       ├── mcp_config.json   # MCP server config (Context7, Fetch)
+│   │       └── plugin.json       # MCP plugin manifest
+│   └── skills/                   # Agent skills (to be added)
+├── .mcp.json                     # Workspace MCP configuration
 ├── src/
 │   ├── fetcher/                  # Azure Function / Worker for data fetching & aggregation
 │   │   ├── clients/              # API clients (WeatherAPI, NMBS/iRail, Calendar)
@@ -78,10 +85,20 @@ Eindopdracht-IT-Integration/
 
 ---
 
-## MCP Server
+## MCP Servers
 
-- MCP Server details are in `.agents/plugins/project-mcp/mcp_config.json`.
-- The server is not part of the repository; it is maintained by the MCP team. It is used for agent orchestration and logging, and to provide a web interface for agent interaction.
+MCP servers are configured in `.agents/plugins/project-mcp/mcp_config.json` and mirrored in `.mcp.json`:
+
+- **Context7 (`context7`)**:
+  - **Purpose**: Fetches real-time, version-specific documentation and code snippets directly from official documentation (e.g. Azure Functions Python v2 programming model, Azure Service Bus SDK, Azure Storage Blob, Pydantic, HTTP libraries). Eliminates hallucinations and outdated API usage.
+  - **Command**: `npx -y @upstash/context7-mcp`
+  - **Environment Variables**: `CONTEXT7_API_KEY` (optional; reads user API key from environment when configured).
+  - **Remote Endpoint**: `https://mcp.context7.com/mcp` (can be used as an alternative Streamable HTTP endpoint).
+  - **Usage Guideline**: Whenever writing code for external libraries or cloud SDKs, query Context7 to verify exact method signatures, parameter names, and configuration schemas.
+
+- **Fetch (`fetch`)**:
+  - **Purpose**: Fetches external documentation and web pages, converting them to clean markdown for fast context inspection (e.g., NMBS/iRail API docs, WeatherAPI schemas, timetable endpoints).
+  - **Command**: `npx -y @modelcontextprotocol/server-fetch`
 
 ---
 
